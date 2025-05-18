@@ -118,11 +118,10 @@ nav img{
 
 .hero h1 {
     width: 100%;
-    color: var(--Black, black);
+    color: black;
     font-size: 30px;
     font-weight: 700;
     word-break: break-word;
-    margin: 0;
 }
 
 .hero p {
@@ -178,8 +177,8 @@ nav img{
 }
 
 
-/* westlife */
-.westlife{
+/* song box */
+.song-box{
     width: 240px; 
     height: 300px; 
     padding-left: 20px; 
@@ -195,13 +194,13 @@ nav img{
     display: inline-flex;
 }
 
-.westlife img{
+.song-box img{
     width: 200px; 
     height: 200px; 
     border-radius: 10px;
 }
 
-.westlife h1{
+.song-box h1{
     text-align: center; 
     color: black;
     font-size: 16px; 
@@ -210,7 +209,7 @@ nav img{
     word-wrap: break-word;
 }
 
-.westlife p{
+.song-box p{
     text-align: center; 
     color: black;
     font-size: 16px; 
@@ -220,127 +219,103 @@ nav img{
 }
 
 
-/* Hivi */
-.hivi{
-    width: 240px; 
-    height: 300px; 
-    padding-left: 20px; 
-    padding-right: 20px; 
-    padding-top: 15px; 
-    padding-bottom: 15px; 
+/* Recomended songs */
+
+.recomended-songs button {
+    width: 24px; 
+    height: 24px; 
+    position: relative; 
     background: #F1ADC9; 
-    border-radius: 10px; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 19px; 
-    display: inline-flex;
+    overflow: hidden; 
+    border-radius: 100px;
 }
-
-.hivi img{
-    width: 200px; 
-    height: 200px; 
-    border-radius: 10px;
-}
-
-.hivi h1{
+.recomended-songs h1{
+    width: 100%; 
     text-align: center; 
     color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 700; 
     word-wrap: break-word;
+    margin-bottom: 20px;
 }
 
-.hivi p{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
+
+    /*caraosel*/
+.caraosel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+.carousel-container img {
+    display: block;
+}
+
+
+footer{
+    width: 100%; 
+    height: 100%; 
+    padding: 10px; 
+    margin-top: 86px;
+    background: #D4D4D4; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+    border-top: 1px black solid;
+    color: black; 
+    font-size: 20px; 
     font-weight: 400; 
     word-wrap: break-word;
+
 }
 
+@media screen and (max-width: 800px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
 
-/* taylor swift */
-.taylor-swift{
-    width: 240px; 
-    height: 300px; 
-    padding-left: 20px; 
-    padding-right: 20px; 
-    padding-top: 15px; 
-    padding-bottom: 15px; 
-    background: #F1ADC9; 
-    border-radius: 10px; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 19px; 
-    display: inline-flex;
-}
+    .hero img {
+        width: 200px;
+        height: auto;
+    }
 
-.taylor-swift img{
-    width: 200px; 
-    height: 200px; 
-    border-radius: 10px;
-}
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
-.taylor-swift h1{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    word-wrap: break-word;
-}
+    nav img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 15px;
+    }
 
-.taylor-swift p{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 400; 
-    word-wrap: break-word;
-}
-
-
-/* no na */
-.no-na{
-    width: 240px; 
-    height: 300px; 
-    padding-left: 20px; 
-    padding-right: 20px; 
-    padding-top: 15px; 
-    padding-bottom: 15px; 
-    background: #F1ADC9; 
-    border-radius: 10px; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 19px; 
-    display: inline-flex;
-}
-
-.no-na img{
-    width: 200px; 
-    height: 200px; 
-    border-radius: 10px;
-}
-
-.no-na h1{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    word-wrap: break-word;
-}
-
-.no-na p{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 400; 
-    word-wrap: break-word;
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 20px;
+        align-items: center;
+    }
+    .inside-best-song, .gambar1 {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
