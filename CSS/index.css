@@ -105,6 +105,7 @@ section {
     align-items: center;
     gap: 2rem; 
     box-sizing: border-box;
+    box-shadow: 0 10px 20px #00000037;
 }
 
 .hero-text {
@@ -147,8 +148,9 @@ section img {
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: center; 
-    gap: 22px; 
+    gap: 50px; 
     display: inline-flex
+    
 }
 
 .best-song h1{
@@ -192,6 +194,13 @@ section img {
     align-items: center; 
     gap: 19px; 
     display: inline-flex;
+    box-shadow: 0 4px 15px #500724ac;
+    transition: color 0.8s ease;
+}
+
+.song-box:hover{
+    transform: scale(1.05); 
+    transition: transform 0.4s ease;
 }
 
 .song-box img{

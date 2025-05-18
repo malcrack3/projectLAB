@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    color: black;
+}
+
+/* NAVIGATION */
+nav{
+    padding: 5px 50px;
+    background: #D4D4D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+nav img{
+    width: 251px;
+    height: 63px;
+    object-fit: cover;
+}
+
+.navigation{
+    flex: 1 1 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.navigation a:hover{
+    color: #F5ACC9; 
+}
+
+/* dropdown */
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-isi {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #d4d4d4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 10px 0px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+.dropdown-isi a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.dropdown:hover .dropdown-isi {
+    display: block;
+
+}
+
+.dropdown-isi a:hover {
+  background-color: #ffffff4f;
+}
+
+
+/* REGISTER */
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3C4C4;
+    box-shadow: 0px 0px 37px #F9A8D4;
+    max-width: 90%;
+    width: 500px;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.input input[type="text"],
+.input input[type="password"],
+.input input[type="number"] {
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.form-register button {
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.form-register button:hover {
+    background-color: #333;
+}
+
+.required::after{
+    content: "*";
+    color: rgba(255, 0, 0, 0.518);
+}
+
+footer{
+    width: 100%; 
+    height: 100%; 
+    padding: 10px; 
+    margin-top: 86px;
+    background: #D4D4D4; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+    border-top: 1px black solid;
+    color: black; 
+    font-size: 20px; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+/* Responsive untuk layar ≤ 800px */
+@media (max-width: 800px) {
+     nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .dropdown-isi {
+        min-width: 140px;
+        font-size: 16px;
+    }
+
+    .register {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .form-register {
+        width: 100%;
+    }
+}

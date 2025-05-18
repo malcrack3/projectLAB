@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+
+<header>
+        <nav>
+            <img src="../gambar/logo_cgroovy.png" alt="logo">
+    
+            <div class="navigation">
+                <a href="../HTML/index.html">Home</a>
+                <a href="../HTML/about_us.html">About Us</a>
+    
+                <div class="dropdown">
+                    <a href="../HTML/song_collection.html" class="dropdown-toggle">Collections <span class="arrow">&#9662</span></a>
+    
+                    <div class="dropdown-isi">
+                        <a href="../HTML/songs_detail.html">Songs Detail</a>
+                    </div>
+                </div>
+                <a href="../HTML/Register.html">Register</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- REGISTER -->
+
+   <section class="register">
+       <form action="" method="post" class="form-register">
+           <h1>Register Now!</h1>
+   
+           <div class="input">
+               <label for="username" class="required">Username</label>
+               <input type="text" name="username" id="username" required>
+           </div>
+
+           <div class="input">
+               <label for="email" class="required">Email</label>
+               <input type="text" name="email" id="email" required>
+           </div>
+
+
+           <div class="input">
+               <label for="password" class="required">Password</label>
+               <input type="password" name="password" id="password" required>
+           </div>
+
+
+           <div class="input">
+               <label for="age" class="required">Age</label>
+               <input type="number" name="age" id="age" required>
+           </div>
+
+           <div class="input">
+               
+               <label for="gender">
+                   <input type="radio" name="gender" id="male">
+                    Male
+                </label>
+
+                <label for="gender">
+                    <input type="radio" name="gender" id="female">
+                    Female
+                </label>
+
+           </div>
+
+           <button type="button" onclick="validateForm()">Register</button>
+
+       </form>
+   </section>
+
+   <script src="../JS/jquery-3.6.0.min.js"></script>
+   <Script src="../JS/script.js"></SCript>
+
+    <footer>© 2025 C'Groovy. Bringing music to your world. All rights reserved.</footer>
+
+</body>
+</html>
