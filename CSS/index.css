@@ -13,7 +13,7 @@
     justify-content: flex-start; 
     align-items: center; 
     gap: 89px; 
-    display: inline-flex;
+    display: flex;
 }
 
 /* NAVIGATION */
@@ -95,7 +95,7 @@ nav img{
 
 /* HERO */
 
-.hero {
+section {
     width: 100%;
     padding: 44px 138px;
     background: #F3C4C4;
@@ -107,7 +107,7 @@ nav img{
     box-sizing: border-box;
 }
 
-.inside {
+.hero-text {
     flex: 1 1 646px;
     display: flex;
     flex-direction: column;
@@ -116,7 +116,7 @@ nav img{
     gap: 13px;
 }
 
-.hero h1 {
+section h1 {
     width: 100%;
     color: black;
     font-size: 30px;
@@ -124,7 +124,7 @@ nav img{
     word-break: break-word;
 }
 
-.hero p {
+section p {
     width: 100%;
     color: black;
     font-size: 20px;
@@ -133,7 +133,7 @@ nav img{
     margin: 0;
 }
 
-.hero img {
+section img {
     width: 276px;
     height: 252px;
     object-fit: contain;
@@ -248,23 +248,21 @@ nav img{
 }
 
 .carousel-container {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    width: 600px;
+    height: 400px;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 
-.carousel-container img {
+.carousel-container img, .caraosel-item {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     display: none;
+    object-fit: cover;
 }
-
-.carousel-container img {
-    display: block;
-}
-
 
 footer{
     width: 100%; 
@@ -285,13 +283,13 @@ footer{
 }
 
 @media screen and (max-width: 800px) {
-    .hero {
+    section {
         flex-direction: column;
         text-align: center;
         padding: 20px;
     }
 
-    .hero img {
+    section img {
         width: 200px;
         height: auto;
     }
