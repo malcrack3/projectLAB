@@ -27,9 +27,10 @@ nav{
 }
 
 nav img{
-    width: 251px;
-    height: 63px;
-    object-fit: cover;
+    max-height: 50px;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .navigation{

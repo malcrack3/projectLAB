@@ -80,6 +80,6 @@ const validateForm =() => {
         alert("Oh no, you must pick a gender!"); return;
     }
 
-    alert("Your Registration is Complete!")
+    alert("Your Registration is Complete!");
 
 };
