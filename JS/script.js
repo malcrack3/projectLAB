@@ -91,11 +91,14 @@ window.addEventListener('load', () => {
   const audio = document.querySelector('audio');
   if (audio) {
     audio.play().catch(() => {
-      alert('audio gagal, kemungkinan browser memblokir autoplay tanpa interaksi user.');
+      console.log('audio gagal, kemungkinan browser memblokir autoplay tanpa interaksi user.');
     });
   }
 });
 
-document.getElementById('back').addEventListener('click', () => {
-  window.location.href = '../HTML/song_collection.html';
-});
+const backBtn = document.getElementById('back');
+if (backBtn) {
+    backBtn.addEventListener('click', () => {
+        window.location.href = '../HTML/song_collection.html';
+    });
+}
