@@ -81,5 +81,19 @@ const validateForm =() => {
     }
 
     alert("Your Registration is Complete!");
+}
 
-};
+// detail song page
+
+window.addEventListener('load', () => {
+  const audio = document.querySelector('audio');
+  if (audio) {
+    audio.play().catch(() => {
+      console.log('Autoplay audio gagal, kemungkinan browser memblokir autoplay tanpa interaksi user.');
+    });
+  }
+});
+
+document.getElementById('back').addEventListener('click', () => {
+  window.location.href = '../HTML/song_collection.html';
+});
