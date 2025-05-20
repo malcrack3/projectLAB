@@ -38,6 +38,7 @@ const isAlphanumeric = (password) => {
     let hasNumber = false;
     for(let i = 0; i < password.length; i++){
 
+        const char = password[i];
         if((char >= 'A' && char <= 'Z') || (char >= 'a' && char <= 'z')) {
             hasLetter = true;
         }
@@ -83,13 +84,14 @@ const validateForm =() => {
     alert("Your Registration is Complete!");
 }
 
+//=================================================================================
 // detail song page
 
 window.addEventListener('load', () => {
   const audio = document.querySelector('audio');
   if (audio) {
     audio.play().catch(() => {
-      console.log('Autoplay audio gagal, kemungkinan browser memblokir autoplay tanpa interaksi user.');
+      alert('audio gagal, kemungkinan browser memblokir autoplay tanpa interaksi user.');
     });
   }
 });
