@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+body{
+  background: linear-gradient(
+    180deg, 
+    #1D000C 0%, 
+    #830035 100%), 
+    white;
+}
+
 /* NAVIGATION */
 nav {
   padding: 5px 50px;
@@ -24,7 +32,7 @@ nav img {
   display: flex;
   align-items: center;
   gap: 50px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -75,26 +83,41 @@ nav img {
 
 /* SONG DETAIL */
 .song-detail {
-  padding: 32px 0;
   text-align: center;
-  width: 90%;
-  max-width: 1100px;
+  width: 100%;
   margin: auto;
 }
 
-.song-info h1 {
-  font-size: 40px;
+.hero{
+  background-color: white;
+  border-radius: 0px 0px 50px 50px;
+  padding: 30px;
+  box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.401);
+}
+
+.song-detail h1{
+  font-weight: bold;
+  font-size: 48px;
   color: #222;
 }
 
+.song-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .song-info h2 {
   font-size: 24px;
   color: #b73c6d;
   margin: 8px 0;
 }
 
-.song-info p {
-  margin-bottom: 40px;
+.song-info p{
+  text-align: center;
+  width: 80vw;
+  font-size: 20px;
 }
 
 .description {
@@ -113,13 +136,6 @@ nav img {
 .inside {
   padding: 10px 50px 30px;
   border-radius: 20px;
-  background: linear-gradient(
-    180deg,
-    rgba(224, 167, 195, 0.47) 0%,
-    rgba(210, 128, 169, 0.54) 31%,
-    rgba(185, 56, 120, 0.66) 67%,
-    #A8527D 100%
-  );
 }
 
 /* AUDIO */
@@ -133,10 +149,10 @@ audio {
 
 /* Lyrics */
 .lyrics-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 32px;
-  background-color: #F5ACC9;
-  border-radius: 10px;
-  padding: 30px 50px;
   text-align: left;
 }
 
@@ -144,13 +160,13 @@ audio {
   font-size: 30px;
   color: #444;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .lyrics {
   color: white;
-  font-size: 20px;
-  font-weight: 600;
-  word-wrap: break-word;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 /* Back Button */
@@ -175,11 +191,10 @@ audio {
 footer {
   width: 100%;
   padding: 10px;
-  margin-top: 86px;
-  background: #D4D4D4;
+  background: #202020;
   text-align: center;
   font-size: 20px;
-  color: black;
+  color: white;
   border-top: 1px solid black;
 }
 
@@ -201,8 +216,9 @@ footer {
     font-size: 20px;
   }
 
-  .song-info h1 {
+  .title h1 {
     font-size: 30px;
+    font-weight: 700;
   }
 
   .lyrics {

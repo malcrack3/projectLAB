@@ -102,3 +102,43 @@ if (backBtn) {
         window.location.href = '../HTML/song_collection.html';
     });
 }
+
+
+//=================================================================================
+
+// Songs Collections
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownContent = document.querySelector(".dropdown-content");
+  
+    dropdown.addEventListener("mouseenter", () => {
+      dropdownContent.style.display = "block";
+    });
+  
+    dropdown.addEventListener("mouseleave", () => {
+      dropdownContent.style.display = "none";
+    });
+  
+    // Smooth scroll for view detail buttons
+    const detailButtons = document.querySelectorAll(".view-detail-btn");
+    detailButtons.forEach((btn) => {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const songId = this.getAttribute("data-song-id");
+        const songElement = document.getElementById(songId);
+        if (songElement) {
+          songElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  
+    // Responsive menu toggle (if needed later)
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+  
+    if (menuToggle) {
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    }
+  });
