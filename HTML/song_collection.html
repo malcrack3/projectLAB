@@ -47,17 +47,17 @@
             <div class="card">
                 <h3 class="genre-title">POP</h3>
                 <div class="song-grid">
-                    <div class="song-card">
-                        <img src="../gambar/good luck, babe - chapel roan.png" alt="Good Luck, Babe!" />
+                    <div class="song-card" onclick="openPage('../HTML/song_detail.html')">
+                        <img src="../gambar/good luck, babe - chapel roan.png" alt="goodluck babe" />
 
                         <div class="text">
-                            <h4>Good Luck, Babe!</h4>
-                            <h5>Chappell Roan</5>
-                                <p>A bold and theatrical anthem about heartbreak, empowerment, and reclaiming yourself.</p>
-                            </div>
+                            <h4>Goodluck, Babe!</h4>
+                            <h5>Chapel Roan</h5>
+                            <p>A bold and theatrical anthem about heartbreak, empowerment, and reclaiming yourself.</p>
                         </div>
+                    </div>
                         
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/seven - jungkook.jpeg" alt="Seven" />
 
                         <div class="text">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                         
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/taste - sabrina carpenter.png" alt="Taste" />
 
                         <div class="text">
@@ -83,7 +83,7 @@
             <div class="card">
                 <h3 class="genre-title">R&B</h3>
                 <div class="song-grid">
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/bliss - tyla.jpeg" alt="Bliss" />
                         <div class="text">
                             <h4>Bliss</h4>
@@ -93,7 +93,7 @@
                         
                     </div>
                     
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/luther (with sza).jpg" alt="Luther" />
                         <div class="text">
                             <h4>Luther (with sza)</h4>
@@ -103,7 +103,7 @@
                             
                     </div>
                     
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/burning blue - mariah scientist.png" alt="Burning Blue" />
 
                         <div class="text">
@@ -121,35 +121,37 @@
 
                 <h3 class="genre-title">K-POP</h3>
                 <div class="song-grid">
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/the chase - H2H.jpeg" alt="The Chase" />
 
                         <div class="text">
                             <h4>The Chase</h4>
                             <h5>Hearts2Heart</h5>
-                            <p>A high-energy debut filled with youthful spirit and hopeful romance.</p><br>
+                            <p>A high-energy debut filled with youthful spirit and hopeful romance.</p>
                         </div>
                             
                     </div>
                     
-                    <div class="song-card">
+                    <div class="song-card" id="card_song">
                         <img src="../gambar/like Jennie - Jennie.jpeg" alt="like JENNIE" />
 
                         <div class="text">
                             <h4>like JENNIE</h4>
                             <h5>JENNIE</h5>
-                            <p>Fierce and confident, this track is a self-empowering anthem of individuality.</p><br>
+                            <p>Fierce and confident, this track is a self-empowering anthem of individuality.</p>
                         </div>
                         
                     </div>
                     
-                    <div class="song-card">
-                        <img src="../gambar/drama - aespa.jpeg" alt="DRIP" />
+                    <div class="song-card" id="card_song">
+                        <img src="../gambar/drip - baby monster.jpeg" alt="DRIP" />
+
                         <div class="text">
                             <h4>DRIP</h4>
-                            <p>BABY MONSTER</p>
-                            <p>A strong K-pop debut with swagger, powerful beats, and rebellious attitude.</p><br>
+                            <h5>Baby Monster</h5>
+                            <p>Fierce and confident, this track is a self-empowering anthem of individuality.</p>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -158,8 +160,8 @@
 
     <footer>© 2025 C'Groovy. Bringing music to your world. All rights reserved.</footer>
 
-    <script src="../JS/script.js"></script>
     <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/script.js"></script>
 
 </body>
 </html>

@@ -117,14 +117,15 @@ section {
     gap: 40px;
 }
 
-.hero-text h1{
-    font-size: 36px;
-    color: white;
+.hero-text h1 {
+  color: white;
+  font-size: 36px;
 }
 
-.hero-text p{
-    font-size: 24px;
-    color: white;
+.hero-text p {
+  color: white;
+  font-size: 24px;
+  max-width: 800px;
 }
 
 section img {
