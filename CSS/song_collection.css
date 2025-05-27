@@ -9,56 +9,58 @@ body {
   background-color: #f3c4c4;
 }
 
-/* Navigation */
-nav {
+/* NAVIGATION */
+nav{
   padding: 5px 50px;
-  background: #d4d4d4;
+  background: #D4D4D4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px black solid;
 }
 
-nav img {
+nav img{
   max-height: 50px;
+  height: auto;
+  object-fit: contain;
 }
 
-.navigation {
+.navigation{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 50px;
   font-size: 20px;
   font-weight: 600;
 }
 
-.navigation a {
+.navigation a{
   text-decoration: none;
   color: black;
-}
-
-.navigation a:hover {
-  color: #f5acc9;
-}
-
-/* Dropdown */
-.dropdown {
   position: relative;
+}
+
+.navigation a:hover{
+  color: #F5ACC9; 
+}
+
+/* dropdown */
+
+.dropdown {
+  position: relative; 
 }
 
 .dropdown-isi {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
   min-width: 180px;
   background-color: #d4d4d4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 0px;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.27);
-  padding: 10px 0;
-}
-
-.dropdown:hover .dropdown-isi {
-  display: block;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
 }
 
 .dropdown-isi a {
@@ -66,11 +68,12 @@ nav img {
   padding: 10px 20px;
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.dropdown-isi a:hover {
-  background-color: #ffffff4f;
+.dropdown:hover .dropdown-isi {
+  display: block;
 }
 
 /* Hero Section */
@@ -90,10 +93,10 @@ nav img {
 }
 
 .hero-text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .hero-text h1 {
@@ -115,15 +118,15 @@ nav img {
 
 /* Song Section */
 .song-section {
-  padding: 2rem;
+  padding: 32px;
 }
 
 .card {
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .genre-title {
-  font-size: 1.8rem;
+  font-size: 24px;
   text-align: left;
   border-bottom: 2px black solid;
   margin-bottom: 20px;
@@ -179,7 +182,7 @@ nav img {
   font-size: 14px;
   color: #333;
 }
-
+    
 /* Footer */
 footer {
   background: #202020;
@@ -191,21 +194,40 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   nav {
     flex-direction: column;
+    align-items: center;
     padding: 20px;
+  }
+
+  nav img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
   }
 
   .navigation {
     flex-direction: column;
     gap: 15px;
+    font-size: 20px;
     align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 20px;
   }
 
   .hero img {
     width: 100%;
-    }
+    height: auto;
+  }
+
   .song-grid {
     flex-direction: column;
     align-items: center;

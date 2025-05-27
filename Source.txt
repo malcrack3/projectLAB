@@ -1,0 +1,18 @@
+SOURCE:
+
+JQuery:
+api.jquary.com
+
+CSS & HTML
+https://www.w3schools.com/html/default.asp
+https://www.w3schools.com/css/default.asp
+
+Songs & Pictures:
+https://open.spotify.com/
+
+Lyrics:
+https://genius.com/Chappell-roan-good-luck-babe-lyrics
+
+
+
+

@@ -1,120 +1,143 @@
-*{
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-.main-frame{
-    width: 100%; 
-    height: 100%; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    display: flex;
+.main-frame {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
 }
 
 /* NAVIGATION */
 nav{
-    padding: 5px 50px;
-    background: #D4D4D4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px black solid;
+  padding: 5px 50px;
+  background: #D4D4D4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
 }
 
 nav img{
-    max-height: 50px;
-    height: auto;
-    object-fit: contain;
-    display: block;
+  max-height: 50px;
+  height: auto;
+  object-fit: contain;
 }
 
 .navigation{
-    flex: 1 1 0;
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
-    font-size: 20px;
-    font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .navigation a{
-    text-decoration: none;
-    color: black;
-    position: relative;
+  text-decoration: none;
+  color: black;
+  position: relative;
 }
 
 .navigation a:hover{
-    color: #F5ACC9; 
+  color: #F5ACC9; 
 }
 
 /* dropdown */
 
 .dropdown {
-    position: relative; 
+  position: relative;
 }
 
 .dropdown-isi {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 180px;
-    background-color: #d4d4d4;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    padding: 10px 0px;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 180px;
+  background-color: #d4d4d4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
 }
 
 .dropdown-isi a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.4;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .dropdown:hover .dropdown-isi {
-    display: block;
-
+  display: block;
 }
 
-.dropdown-isi a:hover {
+/* dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-isi {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background-color: #d4d4d4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.274);
+}
+
+.dropdown-isi a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  /* line-height: 1.4; */
+}
+
+.dropdown:hover .dropdown-isi {
+  display: block;
+}
+
+/* .dropdown-isi a:hover {
   background-color: #ffffff4f;
-}
+} */
 
-/* HERO */
-
-section {
-    width: 100%;
-    display: inline-flex;
-    padding-top: 50px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 28px;
-    background: linear-gradient(
-        180deg, 
-        #1D000C 0%, 
-        #830035 100%
-        );
+/* Hero Section */
+.hero {
+  width: 100%;
+  display: inline-flex;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  background: linear-gradient(
+    180deg, 
+    #1D000C 0%, 
+    #830035 100%
+    );
 }
 
 .hero-text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .hero-text h1 {
@@ -128,203 +151,191 @@ section {
   max-width: 800px;
 }
 
-section img {
-    width: 950px;
-    height: 440px;
+.hero img {
+  width: 950px;
+  max-width: 100%;
+  height: auto;
 }
-
 
 /* Best Song Collection */
 
-.best-song{
-    width: 100%; 
-    height: 100%; 
-    padding: 30px;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    display: inline-flex;
-    background-color: #F3C4C4 ;
-    gap: 30px;
-    border-bottom: 2px black solid;
-    border-top: 2px black solid;
+.best-song {
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+  background-color: #f3c4c4;
+  gap: 30px;
+  border-bottom: 2px black solid;
+  border-top: 2px black solid;
 }
 
-.best-song h1{
-    text-align: center; 
-    color: black;
+.best-song h1 {
+  text-align: center;
+  color: black;
 }
 
-.inside-best-song{
-    width: 100%; 
-    height: 100%;
-    justify-content: center; 
-    align-items: center; 
-    gap: 68px; 
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+.inside-best-song {
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.frame-text{
-    width: 100%; 
-    height: 100%; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 7px; 
-    display: inline-flex;
+.frame-text {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  display: flex;
 }
-
 
 /* song box */
-.song-box{
-    width: 240px; 
-    height: 300px; 
-    padding-left: 20px; 
-    padding-right: 20px; 
-    padding-top: 15px; 
-    padding-bottom: 15px; 
-    background: white; 
-    border-radius: 10px; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 19px; 
-    display: inline-flex;
-    box-shadow: 0 4px 15px #500724ac;
-    transition: color 0.8s ease;
-    border: 1px black solid;
+.song-box {
+  width: 240px;
+  height: 300px;
+  padding: 15px 20px 15px 20px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: center;
+  gap: 19px;
+  box-shadow: 0 4px 15px #500724ac;
+  border: 1px black solid;
 }
 
-.song-box:hover{
-    transform: scale(1.05); 
-    transition: transform 0.4s ease;
+.song-box:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
 }
 
-.song-box img{
-    width: 200px; 
-    height: 200px; 
-    border-radius: 10px;
+.song-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
 
-.song-box h1{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 700; 
-    word-wrap: break-word;
+.song-box h1 {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.song-box p{
-    text-align: center; 
-    color: black;
-    font-size: 16px; 
-    font-family: Inter; 
-    font-weight: 400; 
-    word-wrap: break-word;
+.song-box p {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* Recomended songs */
 
-.recomended-songs{
-    padding: 30px;
+.recomended-songs {
+  padding: 30px;
 }
 
 .recomended-songs button {
-    width: 24px; 
-    height: 24px; 
-    position: relative; 
-    background: #F1ADC9; 
-    border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background: #f1adc9;
+  border-radius: 100px;
 }
-.recomended-songs h1{
-    width: 100%; 
-    text-align: center; 
-    color: black;
-    word-wrap: break-word;
-    margin-bottom: 20px;
+.recomended-songs h1 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
 }
 
-
-    /*caraosel*/
+/*CARAOSEL*/
 .caraosel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caraosel .next {
+  cursor: pointer;
+}
+
+.caraosel .prev {
+  cursor: pointer;
 }
 
 .carousel-container {
-    width: 600px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 0 auto;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
-.carousel-container img, .caraosel-item {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    display: none;
-    object-fit: cover;
-}
-
-footer {
+.carousel-container img,
+.caraosel-item {
   width: 100%;
-  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+  display: none;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
   background: #202020;
-  text-align: center;
-  font-size: 20px;
   color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
   border-top: 1px solid black;
 }
 
-@media screen and (max-width: 800px) {
-    section {
-        flex-direction: column;
-        text-align: center;
-    }
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 
-    .hero-text{
-        padding: 20px;
-    }
+  nav img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+  }
 
-    section img {
-        width: 500px;
-        height: auto;
-    }
+  .navigation {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    align-items: center;
+  }
 
-    .carousel-container {
-        width: 400px;
-        height: 300px;
-    }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
+  .hero-text {
+    padding: 20px;
+  }
 
-    nav img {
-        width: 200px;
-        height: auto;
-        margin-bottom: 15px;
-    }
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
 
-    .navigation {
-        flex-direction: column;
-        gap: 15px;
-        font-size: 20px;
-        align-items: center;
-    }
-    .inside-best-song, .gambar1 {
-        flex-direction: column;
-        gap: 30px;
-    }
+  .carousel-container {
+    width: 200px;
+    height: 150px;
+  }
 
 }

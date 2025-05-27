@@ -1,3 +1,5 @@
+// Home Page
+
 $(document).ready(function () {
     var index = 0;
     var items = $('.carousel-container img');
@@ -29,7 +31,6 @@ $(document).ready(function () {
     });
 });
 
-
 //=================================================================================
 
 // Register Page
@@ -51,7 +52,6 @@ const isAlphanumeric = (password) => {
 
     return hasLetter && hasNumber;
 }
-
 
 const validateForm =() => {
     let username = document.getElementById("username").value;
@@ -84,7 +84,9 @@ const validateForm =() => {
     alert("Your Registration is Complete!");
 }
 
-// ini cara supaya bisa link ke page lain
+//=================================================================================
+
+// song collection
 
   $('.song-card').click(function () {
       window.location.href = 'songs_detail.html'
